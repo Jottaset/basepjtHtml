@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Cadastro Cliente</title>
+
+    <link rel="stylesheet" href="node_modules/bootstrap3/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="node_modules/jquery-confirm/css/jquery-confirm.css">
+
+</head>
+<body>
+<div class="container" style="margin-top:20px">
+    <div class="panel panel-primary">
+
+        <div class="panel-heading">
+            <h2>Sistema Clientes - <span class="glyphicon glyphicon-user"></span></h2>
+        </div>
+        <div class="panel panel-default">
+                <div class="panel-body">
+                    <h2>Cadastro - <span class="glyphicon glyphicon-pencil"></span></h2>
+                    <table class="table table-bordered">
+                        <tr>
+                            <td style="text aligin: center"><a href="relClientes.html" >Cadastro</a> </td>
+                            <td style="text aligin: center">Tabela</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        <div class="panel-body">
+            <div class="panel-default">
+
+            <div class="form-group">
+                <div class="col-sm-2">
+                    <label for="text" name="nome">Nome</label>
+                    <input type="text" name="nome" id="nome" class="form-control">
+                </div>
+
+                <div class="col-sm-2">
+                    <label for="text" name="sobrenome">Sobrenome</label>
+                    <input type="text" name="sobrenome" id="sobrenome" class="form-control">
+                </div>
+
+                <div class="col-sm-2">
+                    <label for="text" name="CPF">CPF</label>
+                    <input type="text" name="CPF" id="CPF" class="form-control">
+                </div>
+
+                <div class="col-sm-2">
+                    <br>
+                    <select name="cidade" id="cidade" class="form-control">
+                    <option value="">Cidade</option>
+                    <option value="">Manaus</option>
+                    <option value="">Rio Preto da Eva</option>
+                    </select>
+                </div>
+            </div>
+            <br>
+            <button type="button" onclick="msg()" class="btn btn-success">Efetuar Cadastro</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/bootstrap3/dist/js/bootstrap.js"></script>
+    <script src="node_modules/jquery-confirm/js/jquery-confirm.js"></script>
+    <script src="src/cliente.js"></script>
+</body>
+</html>
